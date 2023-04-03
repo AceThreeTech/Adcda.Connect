@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Projects\Adcda\Adcda.Connect\Adcda.Connect.Test.Blazor\Server\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2023-04-02T11:20:22.1912374Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

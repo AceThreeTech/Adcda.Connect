@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ADCDA</title>
+    <link rel="icon" href="@Url.Content("~/images/civil_defence_logo_black_preview.png")" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/busy-load.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Adcda.Connect.OIDC.Server.styles.css" asp-append-version="true" />
+</head>
+<style>
+    #Logo {
+        max-height: 60px;
+    }
+
+    #logo_mini {
+        height: 25px;
+        width: 35px;
+    }
+
+    .copyright-custom {
+        color: #000;
+        font-size: small;
+    }
+
+    #footer-privacy {
+        color: rgb(112, 120, 117);
+        cursor: pointer;
+        font-size: small;
+        font-weight: 500;
+        position: relative;
+        left: 10px;
+    }
+
+    #footer-terms {
+        color: rgb(112, 120, 117);
+        cursor: pointer;
+        font-size: small;
+        font-weight: 500;
+        position: relative;
+        left: 10px;
+        margin-top: 1px;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        #Logo {
+            max-height: 45px;
+        }
+    }
+
+    @@media only screen and (min-width: 768px) {
+        #Logo {
+            max-height: 50px;
+        }
+    }
+
+    @@media only screen and (min-width: 992px) {
+        #Logo {
+            max-height: 60px;
+        }
+    }
+
+    @@media only screen and (min-width: 1200px) {
+        #Logo {
+            max-height: 70px;
+        }
+    }
+
+    @@media only screen and (min-width: 1400px) {
+        #Logo {
+            max-height: 80px;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid mx-3">
+                <img id="Logo" alt="Adcda Logo" src="@Url.Content("~/images/Adcda Logo.png")">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <div class="flex-grow-1"></div>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <img id="logo_mini" alt="Adcda Logo" src="@Url.Content("~/images/Adcda Logo mini.png")">
+            <span class="copyright-custom">&copy; 2023 </span>
+            <a id="footer-privacy" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <span style="position: relative;left: 10px;">|</span> <a id="footer-terms" asp-area="" asp-controller="Home" asp-action="Terms">Terms & Conditions</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/busy-load.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

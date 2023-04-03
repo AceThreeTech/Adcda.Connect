@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.OIDC.UI\\Shared\\Adcda.Connect.Test.OIDC.UI.Shared.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.OIDC.UI\\Shared\\Adcda.Connect.Test.OIDC.UI.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.OIDC.UI\\Shared\\Adcda.Connect.Test.OIDC.UI.Shared.csproj",
+        "projectName": "Adcda.Connect.Test.OIDC.UI.Shared",
+        "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.OIDC.UI\\Shared\\Adcda.Connect.Test.OIDC.UI.Shared.csproj",
+        "packagesPath": "C:\\Users\\ubutt\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.OIDC.UI\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ubutt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

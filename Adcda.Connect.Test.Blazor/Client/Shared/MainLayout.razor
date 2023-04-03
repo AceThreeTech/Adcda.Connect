@@ -1,0 +1,38 @@
+﻿@inherits LayoutComponentBase
+
+<style>
+    .AppContainer {
+        position: absolute !important;
+        height: 100% !important;
+        width: 100% !important;
+    }
+</style>
+
+<div class="AppContainer">
+    <AuthorizeView>
+        <NotAuthorized>
+            <Spinner />
+            <RedirectToLogin />
+        </NotAuthorized>
+        <Authorized>
+            <div class="sidebar">
+                <NavMenu />
+            </div>
+
+            <div class="main">
+                <div class="top-row px-4 auth">
+                    <strong>Hello, @context?.User?.Identity?.Name!</strong>
+                    <form method="post" action="api/Account/Logout">
+                        <AntiForgeryTokenInput />
+                        <button class="btn btn-link" type="submit">Sign out</button>
+                    </form>
+                </div>
+
+                <div class="content px-4">
+                    @Body
+                </div>
+            </div>
+
+        </Authorized>
+    </AuthorizeView>
+</div>

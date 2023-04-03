@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Adcda.Connect.Test.OIDC.UI.Server.props" />
+</Project>

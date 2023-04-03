@@ -1,0 +1,15 @@
+# Ignore all .pdb and .dll files
+*.pdb
+*.dll
+
+# Ignore the bin folder
+bin/
+
+# Include solution code files
+*.sln
+*.csproj
+*.vbproj
+*.fsproj
+*.xproj
+*.proj
+*.msbuild

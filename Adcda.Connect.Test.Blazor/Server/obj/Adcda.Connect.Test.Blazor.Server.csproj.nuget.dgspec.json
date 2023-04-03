@@ -1,0 +1,225 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Server\\Adcda.Connect.Test.Blazor.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\Adcda.Connect.Test.Blazor.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\Adcda.Connect.Test.Blazor.Client.csproj",
+        "projectName": "Adcda.Connect.Test.Blazor.Client",
+        "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\Adcda.Connect.Test.Blazor.Client.csproj",
+        "packagesPath": "C:\\Users\\ubutt\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ubutt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj": {
+                "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Server\\Adcda.Connect.Test.Blazor.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Server\\Adcda.Connect.Test.Blazor.Server.csproj",
+        "projectName": "Adcda.Connect.Test.Blazor.Server",
+        "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Server\\Adcda.Connect.Test.Blazor.Server.csproj",
+        "packagesPath": "C:\\Users\\ubutt\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ubutt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\Adcda.Connect.Test.Blazor.Client.csproj": {
+                "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Client\\Adcda.Connect.Test.Blazor.Client.csproj"
+              },
+              "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj": {
+                "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "NetEscapades.AspNetCore.SecurityHeaders": {
+              "target": "Package",
+              "version": "[0.18.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj",
+        "projectName": "Adcda.Connect.Test.Blazor.Shared",
+        "projectPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\Adcda.Connect.Test.Blazor.Shared.csproj",
+        "packagesPath": "C:\\Users\\ubutt\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Adcda\\Adcda.Connect\\Adcda.Connect.Test.Blazor\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ubutt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

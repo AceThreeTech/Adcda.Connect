@@ -1,0 +1,127 @@
+﻿@page
+@model Adcda.Connect.OIDC.Server.Areas.Identity.Pages.Account.LoginWithSmsOtpModel
+@{
+    ViewData["Title"] = "Verify OTP";
+}
+
+<style>
+    .form-control:focus {
+        box-shadow: none;
+        border: 1px solid #0A66C2;
+    }
+
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #625656;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    label {
+        color: #625656 !important;
+    }
+
+    #remember-password {
+        color: #0A66C2;
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        top: 20px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        background-color: #0A66C2;
+    }
+
+    button:focus {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    #remember-password:hover {
+        cursor: pointer !important;
+    }
+
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #bfb7b7;
+    }
+
+    .separator:not(:empty)::before {
+        margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+        margin-left: .25em;
+    }
+</style>
+
+<section class="h-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-12 p-2 d-flex align-items-center">
+                            <div class="card-body  text-black">
+                                <h2>Account Verification</h2>
+                                <p>A verification code has been sent to:</p>
+                                <p>@Model.UserPhone</p>
+                                <form id="account" method="post" asp-route-returnUrl="@Model.ReturnUrl">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                                    <div class="form-floating mt-4">
+                                        <input asp-for="Input.TwoFactorCode" type="text" autocomplete="off" class="form-control" id="txtCode" placeholder="Verification Code">
+                                        <label asp-for="Input.TwoFactorCode" for="floatingInput">Verification Code</label>
+                                        <span asp-validation-for="Input.TwoFactorCode" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block btn-submit" name="submitType" value="Submit Code">Submit</button>
+                                    </div>
+                                    <div class="form-group mt-2">
+                                        <a id="remember-password" onclick="SubmitForm();">Resend Code</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $('#account').bind('submit', function (e) {
+            e.preventDefault();
+            SubmitForm(this);
+        });
+
+        $("#account").bind('ajax:complete', function () {
+            $.busyLoadFull("hide");
+        });
+        function SubmitForm($form) {
+            $.busyLoadFull("show", {
+                spinner: "pulsar",
+                animation: "fade",
+                animationDuration: "slow"
+            });
+
+            $form.submit(@Model.ReturnUrl, submitType);
+        }
+    </script>
+}

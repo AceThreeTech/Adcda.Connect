@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Adcda.Connect.OIDC.Server.Data
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4 text-center">Welcome</h1>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="text-center">
+        <p>@UserManager.GetUserName(User)!</p>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <p>Please <a id="login" asp-area="Identity" asp-page="/Account/Login">Sign In</a> to your ADCDA account to continue.</p>
+    </div>
+}

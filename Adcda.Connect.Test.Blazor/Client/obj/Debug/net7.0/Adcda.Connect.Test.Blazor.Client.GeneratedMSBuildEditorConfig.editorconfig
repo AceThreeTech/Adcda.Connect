@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Adcda.Connect.Test.Blazor.Client
+build_property.RootNamespace = Adcda.Connect.Test.Blazor.Client
+build_property.ProjectDir = C:\Projects\Adcda\Adcda.Connect\Adcda.Connect.Test.Blazor\Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Projects\Adcda\Adcda.Connect\Adcda.Connect.Test.Blazor\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Shared/AntiForgeryTokenInput.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFudGlGb3JnZXJ5VG9rZW5JbnB1dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Shared/Spinner.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6xsk510alz
+
+[C:/Projects/Adcda/Adcda.Connect/Adcda.Connect.Test.Blazor/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4cm5ms4q0s
